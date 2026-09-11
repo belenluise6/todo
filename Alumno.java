@@ -1,8 +1,9 @@
 package Objetoperdido;
 
-public class Gestor {
-	String nombre;
+public class Alumno {
+
+    String nombre;
     String apellido;
     String CI;
-
+    String salon;
 }
