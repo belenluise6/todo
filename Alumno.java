@@ -1,23 +1,42 @@
-package Objetoperdido;
+package Objetosperdidos;
 
 public class Alumno {
 
-	  String nombre;
-	  String apellido;
-	  String CI;
-	  String salon;
+    private String nombre;
+    private String apellido;
+    private int ci;
+    private String salon;
 
-	public Alumno(String nombre, String apellido, String CI, String salon) {
-	  this.nombre = nombre;
-	  this.apellido = apellido;
-	  this.CI = CI;
-	  this.salon = salon;
+    public Alumno(String nombre, String apellido, int ci, String salon) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.ci = ci;
+        this.salon = salon;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getCi() {
+        return ci;
+    }
+
+    public String getSalon() {
+        return salon;
+    }
+
+    public void mostrarDatos() {
+        System.out.println("ALUMNO");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
+        System.out.println("CI: " + ci);
+        System.out.println("Salon: " + salon);
+    }
 }
 
-	public void mostrarDatos() {
-	   System.out.println("Nombre: " + nombre);
-	   System.out.println("Apellido: " + apellido);
-	   System.out.println("CI: " + CI);
-	   System.out.println("Salón: " + salon);
-  }
-}
+
